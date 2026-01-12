@@ -69,4 +69,5 @@ Requisitos: Docker + VS Code + extensión “Dev Containers”.
 1. Abre el repo en VS Code.
 2. Ejecuta: Dev Containers: Reopen in Container.
 
-
+## 📄 Licencia
+MIT (material académico).
