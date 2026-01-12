@@ -1,10 +1,6 @@
 {
-  "name": "Agro-IA (rapido)",
-  "image": "mcr.microsoft.com/devcontainers/python:3.10",
-
-  "features": {
-    "ghcr.io/devcontainers/features/git:1": {}
-  },
+  "name": "Agro-IA (full-docs)",
+  "build": { "dockerfile": "Dockerfile" },
 
   "customizations": {
     "vscode": {
@@ -13,7 +9,8 @@
         "ms-python.vscode-pylance",
         "ms-toolsai.jupyter",
         "ms-python.black-formatter",
-        "eamodio.gitlens"
+        "james-yu.latex-workshop",
+        "MS-CEINTL.vscode-language-pack-es"
       ],
       "settings": {
         "editor.formatOnSave": true,
@@ -23,6 +20,9 @@
             "source.organizeImports": "explicit"
           }
         },
+        "latex-workshop.view.pdf.viewer": "tab",
+        "latex-workshop.latex.autoBuild.run": "onSave",
+        "latex-workshop.latex.outDir": "%DIR%/build",
         "files.trimTrailingWhitespace": true
       }
     }
@@ -33,6 +33,11 @@
   "portsAttributes": {
     "8888": { "label": "Jupyter" },
     "8000": { "label": "FastAPI" }
+  },
+
+  "hostRequirements": {
+    "memory": "4gb",
+    "storage": "10gb"
   },
 
   "remoteUser": "vscode"
