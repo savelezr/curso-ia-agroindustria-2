@@ -186,17 +186,22 @@ Comandos clave:
 \begin{lstlisting}[style=bashstyle]
 # Ver en qué carpeta estás
 pwd
-/home/estudiante
+/workspaces/curso-ia-agroindustria-2 
 
 # Listar el contenido de la carpeta actual
 ls -lh
-drwxr-xr-x 2 estudiante estudiante 4.0K ene 10 proyectos
--rw-r--r-- 1 estudiante estudiante 1.2M ene 10 sensores.csv
+total 24K
+-rw-rw-rw-  1 vscode root 1.1K Jan 19 02:25 LICENSE
+-rw-rw-rw-  1 vscode root 4.6K Jan 19 02:25 README.md
+drwxrwxrwx+ 5 vscode root 4.0K Jan 19 02:25 docs
+drwxrwxrwx+ 2 vscode root 4.0K Jan 19 02:25 scripts
+drwxrwxrwx+ 4 vscode root 4.0K Jan 19 02:25 talleres
 
-# Entrar a la carpeta del proyecto
-cd proyectos
+# Crear la carpeta data y entrar en ella
+mkdir data
+cd data
 pwd
-/home/estudiante/proyectos
+/workspaces/curso-ia-agroindustria-2/data
 
 # Listar solo archivos CSV
 ls *.csv

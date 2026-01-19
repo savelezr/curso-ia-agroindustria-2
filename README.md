@@ -112,6 +112,13 @@ curso-ia-agroindustria-2/
 
 * Entregable: entregables/A1_bash_git/
 
+## ⚙️ Setup
+Para descargar los datos y validar el entorno, ejecuta:
+
+```bash
+./scripts/setup_proyecto.sh
+
+
 ## 📄 Licencia
 
 MIT (material académico). Ver LICENSE.
